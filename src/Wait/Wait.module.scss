@@ -1,0 +1,19 @@
+.wait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  height: 500px;
+
+  .waitImg {
+    width: 200px;
+  }
+
+  .waitText {
+    margin-top: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 30px;
+    color: #10917e;
+  }
+}

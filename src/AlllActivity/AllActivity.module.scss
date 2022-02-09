@@ -1,0 +1,38 @@
+.allActivity {
+  display: flex;
+  flex-direction: column;
+
+  animation-name: slideLeft;
+  animation-duration: 0.5s;
+
+  .activityContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 40px;
+  }
+
+  .buttonLine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    button {
+      width: 250px;
+      font-family: "Noto Sans KR", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

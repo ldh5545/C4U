@@ -1,0 +1,78 @@
+.question {
+  display: flex;
+  flex-direction: column;
+
+  .progressBar {
+    width: 325px;
+    height: 5px;
+    background-color: #d9d1d0;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+
+    .progressInnerBar {
+      position: absolute;
+      background-color: #10917e;
+      height: 5px;
+      border-radius: 20px;
+      transition: 0.2s ease-out;
+    }
+  }
+
+  .questionMainBox {
+    display: flex;
+    flex-direction: column;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+  }
+
+  .progressText {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #10917e;
+    font-size: 12px;
+    text-align: right;
+  }
+
+  .questionBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+
+    .questionNumber {
+      font-family: "Montserrat", sans-serif;
+      color: #10917e;
+      font-size: 34px;
+      font-weight: 600;
+      margin-top: 80px;
+    }
+
+    .questionText {
+      font-family: "Noto Sans KR", sans-serif;
+      color: black;
+      font-size: 17px;
+      margin-bottom: 25px;
+      white-space: pre;
+    }
+  }
+
+  .buttonBox {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      font-size: 16px;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

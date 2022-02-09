@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-height: 600px;
+  text-align: center;
+
+  .title {
+    font-size: 100px;
+    font-weight: 900;
+    color: #10917e;
+    font-family: "Montserrat", sans-serif;
+    height: 120px;
+  }
+
+  .subTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  .mainContent {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    color: rgb(103, 104, 104);
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
